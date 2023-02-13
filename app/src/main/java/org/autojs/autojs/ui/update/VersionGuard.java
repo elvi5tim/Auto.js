@@ -29,6 +29,9 @@ public class VersionGuard {
     }
 
     public void checkForDeprecatesAndUpdates() {
+        if (true)
+            return;
+
         mVersionService.readDeprecatedFromPrefIfNeeded(mActivity);
         if (mVersionService.isCurrentVersionDeprecated()) {
             showDeprecatedDialogIfNeeded();
